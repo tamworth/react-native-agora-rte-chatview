@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+ 
+  Copyright © 2020 Agora. All rights reserved.
+*/
+
+// Chat
+ChatMuteTagText = "You are not allowed to send messages in the chat box";
+ChatText = "Message";
+ChatEmptyText = "No Message";
+ChatConversation = "Quiz";
+ChatSendText = "Send";
+ChatPlaceholderText = "Input";
+ChatSilencedPlaceholderText = "Banned to chat";
+ChatDisableToastText = "Turn on mute mode";
+ChatEnableToastText = "Turn off mute mode";
+ChatDisableText = "mute chat";
+
+rtm_role_student = "Student";
+rtm_role_teacher = "Teacher";
+rtm_title_chat = "Chat";
+rtm_no_message = "No Message";
+
+// Hyphenate
+ChatText = "Chat";
+ChatAnnouncement = "Notice";
+ChatTeacher= "Teacher";
+ChatAssistant= "Assistant";
+ChatEmptyText = "No Message";
+ChatNoAnnouncement = "No Notice";
+ChatAllMute = "All Mute";
+ChatMute = "You are muted by teacher";
+ChatLoginFaild = "Login failed";
+ChatJoinFaild = "Join failed";
+ChatSendFaildByMute = "Send faild,you have been muted";
+ChatSendFaildBySensitive = "Send faild,message contain sensitive word";
+ChatLoginOnOtherDevice = "Account login on ther device";
+ChatLogoutForced = "Account login out forced";
+ChatTeacherRemoveMsg = "The teacher remove a message";
+ChatTeacherMuteAll = "The teacher mute all";
+ChatTeacherUnmuteAll = "The teacher unmute all";
+ChatRecall = "Recall";
+ChatRecallAMessage = "Recall a message";
+ChatMutedByTeacher = "muted by %@ teacher";
+ChatUnmutedByTeacher = "unmuted by %@ teacher";

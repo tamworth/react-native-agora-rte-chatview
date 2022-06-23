@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3E7B58A1CC2AC0600A0062D /* RCTAgoraRteChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RCTAgoraRteChatView.m */; };
+		DD2E48F62861DB5300D16060 /* RCTAgoraRteChatViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E48F52861DB5300D16060 /* RCTAgoraRteChatViewManager.m */; };
+		DD2E49422861EB4500D16060 /* EMDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E48FA2861EB4500D16060 /* EMDateHelper.m */; };
+		DD2E49432861EB4500D16060 /* EMEmojiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E48FC2861EB4500D16060 /* EMEmojiHelper.m */; };
+		DD2E49442861EB4500D16060 /* EmojiKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E48FD2861EB4500D16060 /* EmojiKeyboardView.m */; };
+		DD2E49452861EB4500D16060 /* ChatWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49042861EB4500D16060 /* ChatWidget.m */; };
+		DD2E49462861EB4500D16060 /* ChatUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49052861EB4500D16060 /* ChatUserConfig.m */; };
+		DD2E49472861EB4500D16060 /* ChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49072861EB4500D16060 /* ChatManager.m */; };
+		DD2E49482861EB4500D16060 /* AnnouncementView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E490A2861EB4500D16060 /* AnnouncementView.m */; };
+		DD2E49492861EB4500D16060 /* ChatBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E490E2861EB4500D16060 /* ChatBar.m */; };
+		DD2E494A2861EB4500D16060 /* EMMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49112861EB4500D16060 /* EMMessageCell.m */; };
+		DD2E494B2861EB4500D16060 /* EMMessageStringCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49122861EB4500D16060 /* EMMessageStringCell.m */; };
+		DD2E494C2861EB4500D16060 /* EMMessageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49132861EB4500D16060 /* EMMessageStatusView.m */; };
+		DD2E494D2861EB4500D16060 /* EMMsgImageBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49192861EB4500D16060 /* EMMsgImageBubbleView.m */; };
+		DD2E494E2861EB4500D16060 /* EMMsgTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E491A2861EB4500D16060 /* EMMsgTextBubbleView.m */; };
+		DD2E494F2861EB4500D16060 /* EMMessageBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E491B2861EB4500D16060 /* EMMessageBubbleView.m */; };
+		DD2E49502861EB4500D16060 /* InputingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E493B2861EB4500D16060 /* InputingView.m */; };
+		DD2E49512861EB4500D16060 /* EMMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E493C2861EB4500D16060 /* EMMessageModel.m */; };
+		DD2E49522861EB4500D16060 /* ChatTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E493E2861EB4500D16060 /* ChatTopView.m */; };
+		DD2E49532861EB4500D16060 /* CustomBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49402861EB4500D16060 /* CustomBadgeView.m */; };
+		DD2E49542861EB4500D16060 /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49412861EB4500D16060 /* ChatView.m */; };
+		DD2E4964286346A700D16060 /* AGResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E4963286346A700D16060 /* AGResourceManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58B511D91A9E6C8500147676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		134814201AA4EA6300B7C361 /* libRNAgoraRteChatview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAgoraRteChatview.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E7B5881CC2AC0600A0062D /* RCTAgoraRteChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTAgoraRteChatView.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* RCTAgoraRteChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTAgoraRteChatView.m; sourceTree = "<group>"; };
+		DD2E48F42861DB5300D16060 /* RCTAgoraRteChatViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTAgoraRteChatViewManager.h; sourceTree = "<group>"; };
+		DD2E48F52861DB5300D16060 /* RCTAgoraRteChatViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTAgoraRteChatViewManager.m; sourceTree = "<group>"; };
+		DD2E48F92861EB4500D16060 /* EMDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMDateHelper.h; sourceTree = "<group>"; };
+		DD2E48FA2861EB4500D16060 /* EMDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMDateHelper.m; sourceTree = "<group>"; };
+		DD2E48FC2861EB4500D16060 /* EMEmojiHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMEmojiHelper.m; sourceTree = "<group>"; };
+		DD2E48FD2861EB4500D16060 /* EmojiKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiKeyboardView.m; sourceTree = "<group>"; };
+		DD2E48FE2861EB4500D16060 /* EMEmojiHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMEmojiHelper.h; sourceTree = "<group>"; };
+		DD2E48FF2861EB4500D16060 /* EmojiKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiKeyboardView.h; sourceTree = "<group>"; };
+		DD2E49012861EB4500D16060 /* ChatWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatWidget.h; sourceTree = "<group>"; };
+		DD2E49022861EB4500D16060 /* ChatUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatUserConfig.h; sourceTree = "<group>"; };
+		DD2E49032861EB4500D16060 /* ChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatManager.h; sourceTree = "<group>"; };
+		DD2E49042861EB4500D16060 /* ChatWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatWidget.m; sourceTree = "<group>"; };
+		DD2E49052861EB4500D16060 /* ChatUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatUserConfig.m; sourceTree = "<group>"; };
+		DD2E49062861EB4500D16060 /* ChatWidgetDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatWidgetDefine.h; sourceTree = "<group>"; };
+		DD2E49072861EB4500D16060 /* ChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatManager.m; sourceTree = "<group>"; };
+		DD2E49092861EB4500D16060 /* EMMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageModel.h; sourceTree = "<group>"; };
+		DD2E490A2861EB4500D16060 /* AnnouncementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementView.m; sourceTree = "<group>"; };
+		DD2E490B2861EB4500D16060 /* InputingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputingView.h; sourceTree = "<group>"; };
+		DD2E490C2861EB4500D16060 /* ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatView.h; sourceTree = "<group>"; };
+		DD2E490D2861EB4500D16060 /* CustomBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadgeView.h; sourceTree = "<group>"; };
+		DD2E490E2861EB4500D16060 /* ChatBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBar.m; sourceTree = "<group>"; };
+		DD2E490F2861EB4500D16060 /* ChatTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTopView.h; sourceTree = "<group>"; };
+		DD2E49112861EB4500D16060 /* EMMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageCell.m; sourceTree = "<group>"; };
+		DD2E49122861EB4500D16060 /* EMMessageStringCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageStringCell.m; sourceTree = "<group>"; };
+		DD2E49132861EB4500D16060 /* EMMessageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageStatusView.m; sourceTree = "<group>"; };
+		DD2E49142861EB4500D16060 /* EMMessageStringCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageStringCell.h; sourceTree = "<group>"; };
+		DD2E49162861EB4500D16060 /* EMMsgImageBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMsgImageBubbleView.h; sourceTree = "<group>"; };
+		DD2E49172861EB4500D16060 /* EMMessageBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageBubbleView.h; sourceTree = "<group>"; };
+		DD2E49182861EB4500D16060 /* EMMsgTextBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMsgTextBubbleView.h; sourceTree = "<group>"; };
+		DD2E49192861EB4500D16060 /* EMMsgImageBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMsgImageBubbleView.m; sourceTree = "<group>"; };
+		DD2E491A2861EB4500D16060 /* EMMsgTextBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMsgTextBubbleView.m; sourceTree = "<group>"; };
+		DD2E491B2861EB4500D16060 /* EMMessageBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageBubbleView.m; sourceTree = "<group>"; };
+		DD2E491C2861EB4500D16060 /* EMMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageCell.h; sourceTree = "<group>"; };
+		DD2E491E2861EB4500D16060 /* msg_recv_audio02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio02@2x.png"; sourceTree = "<group>"; };
+		DD2E491F2861EB4500D16060 /* msg_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location@2x.png"; sourceTree = "<group>"; };
+		DD2E49202861EB4500D16060 /* msg_location_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location_white@3x.png"; sourceTree = "<group>"; };
+		DD2E49212861EB4500D16060 /* msg_bg_send@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_bg_send@3x.png"; sourceTree = "<group>"; };
+		DD2E49222861EB4500D16060 /* msg_send_audio02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio02@3x.png"; sourceTree = "<group>"; };
+		DD2E49232861EB4500D16060 /* msg_send_audio02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio02@2x.png"; sourceTree = "<group>"; };
+		DD2E49242861EB4500D16060 /* msg_location_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location_white@2x.png"; sourceTree = "<group>"; };
+		DD2E49252861EB4500D16060 /* msg_recv_audio02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio02@3x.png"; sourceTree = "<group>"; };
+		DD2E49262861EB4500D16060 /* msg_location@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location@3x.png"; sourceTree = "<group>"; };
+		DD2E49272861EB4500D16060 /* msg_fail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_fail@2x.png"; sourceTree = "<group>"; };
+		DD2E49282861EB4500D16060 /* msg_fail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_fail@3x.png"; sourceTree = "<group>"; };
+		DD2E49292861EB4500D16060 /* msg_send_audio@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio@3x.png"; sourceTree = "<group>"; };
+		DD2E492A2861EB4500D16060 /* msg_send_audio01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio01@2x.png"; sourceTree = "<group>"; };
+		DD2E492B2861EB4500D16060 /* msg_recv_audio01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio01@3x.png"; sourceTree = "<group>"; };
+		DD2E492C2861EB4500D16060 /* msg_recv_audio01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio01@2x.png"; sourceTree = "<group>"; };
+		DD2E492D2861EB4500D16060 /* msg_send_audio01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio01@3x.png"; sourceTree = "<group>"; };
+		DD2E492E2861EB4500D16060 /* msg_send_audio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio@2x.png"; sourceTree = "<group>"; };
+		DD2E492F2861EB4500D16060 /* msg_recv_audio@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio@3x.png"; sourceTree = "<group>"; };
+		DD2E49302861EB4500D16060 /* msg_file_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file_white@2x.png"; sourceTree = "<group>"; };
+		DD2E49312861EB4500D16060 /* msg_file@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file@3x.png"; sourceTree = "<group>"; };
+		DD2E49322861EB4500D16060 /* msg_img_broken@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_img_broken@2x.png"; sourceTree = "<group>"; };
+		DD2E49332861EB4500D16060 /* msg_video_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_video_white@2x.png"; sourceTree = "<group>"; };
+		DD2E49342861EB4500D16060 /* msg_bg_recv@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_bg_recv@3x.png"; sourceTree = "<group>"; };
+		DD2E49352861EB4500D16060 /* msg_video_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_video_white@3x.png"; sourceTree = "<group>"; };
+		DD2E49362861EB4500D16060 /* msg_img_broken@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_img_broken@3x.png"; sourceTree = "<group>"; };
+		DD2E49372861EB4500D16060 /* msg_file@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file@2x.png"; sourceTree = "<group>"; };
+		DD2E49382861EB4500D16060 /* msg_file_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file_white@3x.png"; sourceTree = "<group>"; };
+		DD2E49392861EB4500D16060 /* msg_recv_audio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio@2x.png"; sourceTree = "<group>"; };
+		DD2E493A2861EB4500D16060 /* EMMessageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageStatusView.h; sourceTree = "<group>"; };
+		DD2E493B2861EB4500D16060 /* InputingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputingView.m; sourceTree = "<group>"; };
+		DD2E493C2861EB4500D16060 /* EMMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageModel.m; sourceTree = "<group>"; };
+		DD2E493D2861EB4500D16060 /* AnnouncementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementView.h; sourceTree = "<group>"; };
+		DD2E493E2861EB4500D16060 /* ChatTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTopView.m; sourceTree = "<group>"; };
+		DD2E493F2861EB4500D16060 /* ChatBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBar.h; sourceTree = "<group>"; };
+		DD2E49402861EB4500D16060 /* CustomBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBadgeView.m; sourceTree = "<group>"; };
+		DD2E49412861EB4500D16060 /* ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatView.m; sourceTree = "<group>"; };
+		DD2E496128632F8500D16060 /* AgoraRteChat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AgoraRteChat.bundle; sourceTree = "<group>"; };
+		DD2E4962286346A700D16060 /* AGResourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGResourceManager.h; sourceTree = "<group>"; };
+		DD2E4963286346A700D16060 /* AGResourceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGResourceManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58B511D81A9E6C8500147676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134814211AA4EA7D00B7C361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134814201AA4EA6300B7C361 /* libRNAgoraRteChatview.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58B511D21A9E6C8500147676 = {
+			isa = PBXGroup;
+			children = (
+				DD2E48F72861EB4500D16060 /* ChatWidget */,
+				DD2E48F42861DB5300D16060 /* RCTAgoraRteChatViewManager.h */,
+				DD2E48F52861DB5300D16060 /* RCTAgoraRteChatViewManager.m */,
+				B3E7B5881CC2AC0600A0062D /* RCTAgoraRteChatView.h */,
+				B3E7B5891CC2AC0600A0062D /* RCTAgoraRteChatView.m */,
+				134814211AA4EA7D00B7C361 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD2E48F72861EB4500D16060 /* ChatWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E496128632F8500D16060 /* AgoraRteChat.bundle */,
+				DD2E48F82861EB4500D16060 /* Utils */,
+				DD2E48FB2861EB4500D16060 /* EmojiKeyBoard */,
+				DD2E49002861EB4500D16060 /* Main */,
+				DD2E49082861EB4500D16060 /* Views */,
+			);
+			path = ChatWidget;
+			sourceTree = "<group>";
+		};
+		DD2E48F82861EB4500D16060 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E48F92861EB4500D16060 /* EMDateHelper.h */,
+				DD2E48FA2861EB4500D16060 /* EMDateHelper.m */,
+				DD2E4962286346A700D16060 /* AGResourceManager.h */,
+				DD2E4963286346A700D16060 /* AGResourceManager.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DD2E48FB2861EB4500D16060 /* EmojiKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E48FC2861EB4500D16060 /* EMEmojiHelper.m */,
+				DD2E48FD2861EB4500D16060 /* EmojiKeyboardView.m */,
+				DD2E48FE2861EB4500D16060 /* EMEmojiHelper.h */,
+				DD2E48FF2861EB4500D16060 /* EmojiKeyboardView.h */,
+			);
+			path = EmojiKeyBoard;
+			sourceTree = "<group>";
+		};
+		DD2E49002861EB4500D16060 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E49062861EB4500D16060 /* ChatWidgetDefine.h */,
+				DD2E49032861EB4500D16060 /* ChatManager.h */,
+				DD2E49072861EB4500D16060 /* ChatManager.m */,
+				DD2E49012861EB4500D16060 /* ChatWidget.h */,
+				DD2E49042861EB4500D16060 /* ChatWidget.m */,
+				DD2E49022861EB4500D16060 /* ChatUserConfig.h */,
+				DD2E49052861EB4500D16060 /* ChatUserConfig.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DD2E49082861EB4500D16060 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E49092861EB4500D16060 /* EMMessageModel.h */,
+				DD2E490A2861EB4500D16060 /* AnnouncementView.m */,
+				DD2E490B2861EB4500D16060 /* InputingView.h */,
+				DD2E490C2861EB4500D16060 /* ChatView.h */,
+				DD2E490D2861EB4500D16060 /* CustomBadgeView.h */,
+				DD2E490E2861EB4500D16060 /* ChatBar.m */,
+				DD2E490F2861EB4500D16060 /* ChatTopView.h */,
+				DD2E49102861EB4500D16060 /* MessageCell */,
+				DD2E493B2861EB4500D16060 /* InputingView.m */,
+				DD2E493C2861EB4500D16060 /* EMMessageModel.m */,
+				DD2E493D2861EB4500D16060 /* AnnouncementView.h */,
+				DD2E493E2861EB4500D16060 /* ChatTopView.m */,
+				DD2E493F2861EB4500D16060 /* ChatBar.h */,
+				DD2E49402861EB4500D16060 /* CustomBadgeView.m */,
+				DD2E49412861EB4500D16060 /* ChatView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD2E49102861EB4500D16060 /* MessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E49112861EB4500D16060 /* EMMessageCell.m */,
+				DD2E49122861EB4500D16060 /* EMMessageStringCell.m */,
+				DD2E49132861EB4500D16060 /* EMMessageStatusView.m */,
+				DD2E49142861EB4500D16060 /* EMMessageStringCell.h */,
+				DD2E49152861EB4500D16060 /* BubbleView */,
+				DD2E491C2861EB4500D16060 /* EMMessageCell.h */,
+				DD2E491D2861EB4500D16060 /* MsgCellImgs */,
+				DD2E493A2861EB4500D16060 /* EMMessageStatusView.h */,
+			);
+			path = MessageCell;
+			sourceTree = "<group>";
+		};
+		DD2E49152861EB4500D16060 /* BubbleView */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E49162861EB4500D16060 /* EMMsgImageBubbleView.h */,
+				DD2E49172861EB4500D16060 /* EMMessageBubbleView.h */,
+				DD2E49182861EB4500D16060 /* EMMsgTextBubbleView.h */,
+				DD2E49192861EB4500D16060 /* EMMsgImageBubbleView.m */,
+				DD2E491A2861EB4500D16060 /* EMMsgTextBubbleView.m */,
+				DD2E491B2861EB4500D16060 /* EMMessageBubbleView.m */,
+			);
+			path = BubbleView;
+			sourceTree = "<group>";
+		};
+		DD2E491D2861EB4500D16060 /* MsgCellImgs */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E491E2861EB4500D16060 /* msg_recv_audio02@2x.png */,
+				DD2E491F2861EB4500D16060 /* msg_location@2x.png */,
+				DD2E49202861EB4500D16060 /* msg_location_white@3x.png */,
+				DD2E49212861EB4500D16060 /* msg_bg_send@3x.png */,
+				DD2E49222861EB4500D16060 /* msg_send_audio02@3x.png */,
+				DD2E49232861EB4500D16060 /* msg_send_audio02@2x.png */,
+				DD2E49242861EB4500D16060 /* msg_location_white@2x.png */,
+				DD2E49252861EB4500D16060 /* msg_recv_audio02@3x.png */,
+				DD2E49262861EB4500D16060 /* msg_location@3x.png */,
+				DD2E49272861EB4500D16060 /* msg_fail@2x.png */,
+				DD2E49282861EB4500D16060 /* msg_fail@3x.png */,
+				DD2E49292861EB4500D16060 /* msg_send_audio@3x.png */,
+				DD2E492A2861EB4500D16060 /* msg_send_audio01@2x.png */,
+				DD2E492B2861EB4500D16060 /* msg_recv_audio01@3x.png */,
+				DD2E492C2861EB4500D16060 /* msg_recv_audio01@2x.png */,
+				DD2E492D2861EB4500D16060 /* msg_send_audio01@3x.png */,
+				DD2E492E2861EB4500D16060 /* msg_send_audio@2x.png */,
+				DD2E492F2861EB4500D16060 /* msg_recv_audio@3x.png */,
+				DD2E49302861EB4500D16060 /* msg_file_white@2x.png */,
+				DD2E49312861EB4500D16060 /* msg_file@3x.png */,
+				DD2E49322861EB4500D16060 /* msg_img_broken@2x.png */,
+				DD2E49332861EB4500D16060 /* msg_video_white@2x.png */,
+				DD2E49342861EB4500D16060 /* msg_bg_recv@3x.png */,
+				DD2E49352861EB4500D16060 /* msg_video_white@3x.png */,
+				DD2E49362861EB4500D16060 /* msg_img_broken@3x.png */,
+				DD2E49372861EB4500D16060 /* msg_file@2x.png */,
+				DD2E49382861EB4500D16060 /* msg_file_white@3x.png */,
+				DD2E49392861EB4500D16060 /* msg_recv_audio@2x.png */,
+			);
+			path = MsgCellImgs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58B511DA1A9E6C8500147676 /* RNAgoraRteChatview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNAgoraRteChatview" */;
+			buildPhases = (
+				58B511D71A9E6C8500147676 /* Sources */,
+				58B511D81A9E6C8500147676 /* Frameworks */,
+				58B511D91A9E6C8500147676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNAgoraRteChatview;
+			productName = RCTDataManager;
+			productReference = 134814201AA4EA6300B7C361 /* libRNAgoraRteChatview.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58B511D31A9E6C8500147676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					58B511DA1A9E6C8500147676 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNAgoraRteChatview" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 58B511D21A9E6C8500147676;
+			productRefGroup = 58B511D21A9E6C8500147676;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58B511DA1A9E6C8500147676 /* RNAgoraRteChatview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58B511D71A9E6C8500147676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2E494C2861EB4500D16060 /* EMMessageStatusView.m in Sources */,
+				DD2E4964286346A700D16060 /* AGResourceManager.m in Sources */,
+				DD2E49532861EB4500D16060 /* CustomBadgeView.m in Sources */,
+				DD2E49502861EB4500D16060 /* InputingView.m in Sources */,
+				DD2E49432861EB4500D16060 /* EMEmojiHelper.m in Sources */,
+				DD2E49442861EB4500D16060 /* EmojiKeyboardView.m in Sources */,
+				DD2E494B2861EB4500D16060 /* EMMessageStringCell.m in Sources */,
+				DD2E49542861EB4500D16060 /* ChatView.m in Sources */,
+				DD2E49482861EB4500D16060 /* AnnouncementView.m in Sources */,
+				B3E7B58A1CC2AC0600A0062D /* RCTAgoraRteChatView.m in Sources */,
+				DD2E494D2861EB4500D16060 /* EMMsgImageBubbleView.m in Sources */,
+				DD2E49522861EB4500D16060 /* ChatTopView.m in Sources */,
+				DD2E494A2861EB4500D16060 /* EMMessageCell.m in Sources */,
+				DD2E49472861EB4500D16060 /* ChatManager.m in Sources */,
+				DD2E49452861EB4500D16060 /* ChatWidget.m in Sources */,
+				DD2E49462861EB4500D16060 /* ChatUserConfig.m in Sources */,
+				DD2E494E2861EB4500D16060 /* EMMsgTextBubbleView.m in Sources */,
+				DD2E49492861EB4500D16060 /* ChatBar.m in Sources */,
+				DD2E49422861EB4500D16060 /* EMDateHelper.m in Sources */,
+				DD2E494F2861EB4500D16060 /* EMMessageBubbleView.m in Sources */,
+				DD2E48F62861DB5300D16060 /* RCTAgoraRteChatViewManager.m in Sources */,
+				DD2E49512861EB4500D16060 /* EMMessageModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58B511ED1A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58B511EE1A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58B511F01A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNAgoraRteChatview;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNAgoraRteChatview;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNAgoraRteChatview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511ED1A9E6C8500147676 /* Debug */,
+				58B511EE1A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNAgoraRteChatview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511F01A9E6C8500147676 /* Debug */,
+				58B511F11A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
+}
