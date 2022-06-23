@@ -39,6 +39,16 @@
 ```javascript
 import RNAgoraRteChatview from 'react-native-agora-rte-chatview';
 
+const chatInfo = {
+	appKey: "1129210531094378#apaas-edu",
+	chatRoomId:  '185131943919617',
+	nickName:  'ssssssss',
+	roomUuid:  'rrrrrrrr0',
+	userName:  'c71db6b1dadb6bf72adf083611e2150b',
+}
+
+<RNAgoraRteChatview style={{flex:1}} chatInfo= {chatInfo} />
+
 // TODO: What to do with the module?
 RNAgoraRteChatview;
 ```

@@ -13,6 +13,7 @@ yarn-error.log
 dist
 node_modules
 *lock.json
+*.lock
 
 # Xcode
 #
@@ -33,6 +34,8 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+Pods
+vendor
       
 
 # Android/IntelliJ
