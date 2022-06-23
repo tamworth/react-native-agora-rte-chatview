@@ -7,9 +7,8 @@
 
 #import "AnnouncementView.h"
 #import <Masonry/Masonry.h>
-#import "AGResourceManager.h"
 @import AgoraUIBaseViews;
-//#import <AgoraWidgets/AgoraWidgets-Swift.h>
+#import "AGResourceManager.h"
 
 @interface NilAnnouncementView ()
 @property (nonatomic,strong) UIImageView* nilAnnouncementImageView;
@@ -42,7 +41,7 @@
     self.nilAnnouncementLable = [[UILabel alloc] init];
     self.nilAnnouncementLable.font = [UIFont systemFontOfSize:12];
     self.nilAnnouncementLable.textColor = [UIColor colorWithRed:125/255.0 green:135/255.0 blue:152/255.0 alpha:1.0];
-    self.nilAnnouncementLable.text = [@"ChatNoAnnouncement" ag_localized];
+    self.nilAnnouncementLable.text = [@"fcr_hyphenate_im_no_announcement" ag_localized];
     self.nilAnnouncementLable.textAlignment = NSTextAlignmentCenter;
     [self addSubview:self.nilAnnouncementLable];
     [self.nilAnnouncementLable mas_makeConstraints:^(MASConstraintMaker *make) {

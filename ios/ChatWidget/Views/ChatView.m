@@ -12,7 +12,7 @@
 #import <Masonry/Masonry.h>
 #import "EMDateHelper.h"
 #import "AGResourceManager.h"
-//#import <AgoraWidgets/AgoraWidgets-Swift.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 @import AgoraUIBaseViews;
 
 @interface NilMsgView ()
@@ -44,7 +44,7 @@
     }];
     
     self.nilMsgLable = [[UILabel alloc] init];
-    self.nilMsgLable.text = [@"ChatEmptyText" ag_localized];
+    self.nilMsgLable.text = [@"fcr_hyphenate_im_no_message" ag_localized];
     self.nilMsgLable.font = [UIFont systemFontOfSize:12];
     self.nilMsgLable.textColor = [UIColor colorWithRed:125/255.0 green:135/255.0 blue:152/255.0 alpha:1.0];
     self.nilMsgLable.textAlignment = NSTextAlignmentCenter;
@@ -118,6 +118,10 @@
 @property (nonatomic, strong) UIMenuItem *recallMenuItem;
 // 删除的消息
 @property (nonatomic, strong) NSMutableArray<NSString*>* msgsToDel;
+// 图片放大
+@property (nonatomic,strong) UIImageView* fullImageView;
+// 全员禁言按钮
+@property (nonatomic,strong) UIButton* muteAllButton;
 @end
 
 @implementation ChatView
@@ -130,6 +134,13 @@
         [self setupSubViews];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    if(self.chatManager.user.role == 1) {
+        [self.chatManager removeObserver:self forKeyPath:@"isAllMuted"];
+    }
 }
 
 - (void)setupSubViews
@@ -158,7 +169,7 @@
     
     self.chatBar = [[ChatBar alloc] init];
     self.chatBar.delegate = self;
-    self.chatBar.layer.cornerRadius = 4;
+    self.chatBar.layer.cornerRadius = 15;
     [self addSubview:self.chatBar];
     [self bringSubviewToFront:self.chatBar];
     [self sendSubviewToBack:self.tableView];
@@ -168,8 +179,10 @@
             make.bottom.equalTo(self).offset(-40);
     }];
     [self.chatBar mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.left.width.equalTo(self);
-        make.height.equalTo(@40);
+        make.left.equalTo(self).offset(10);
+        make.bottom.equalTo(self).offset(-5);
+        make.right.equalTo(self).offset(-10);
+        make.height.equalTo(@30);
     }];
 }
 
@@ -227,6 +240,39 @@
     return _menuController;
 }
 
+- (UIImageView*)fullImageView
+{
+    if(!_fullImageView) {
+        _fullImageView = [[UIImageView alloc] init];
+        _fullImageView.userInteractionEnabled = YES;
+        _fullImageView.multipleTouchEnabled = YES;
+        _fullImageView.backgroundColor = [UIColor colorWithWhite:1 alpha:1.0];
+        _fullImageView.contentMode = UIViewContentModeScaleAspectFit;
+        UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                           action:@selector(handleTapAction:)];
+        [_fullImageView addGestureRecognizer:tap];
+        [self addGestureRecognizerToView:_fullImageView];
+    }
+    return _fullImageView;
+}
+
+- (void)pinchView:(UIPinchGestureRecognizer*)pinchGestureRecognizer
+{
+    UIImageView* view = pinchGestureRecognizer.view;
+    if(pinchGestureRecognizer.state == UIGestureRecognizerStateBegan) {
+        view.transform = CGAffineTransformScale(view.transform, pinchGestureRecognizer.scale, pinchGestureRecognizer.scale);
+        pinchGestureRecognizer.scale = 2;
+    }
+}
+
+- (void) addGestureRecognizerToView:(UIView *)view
+{
+    // 缩放手势
+     UIPinchGestureRecognizer *pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchView:)];
+
+    [view addGestureRecognizer:pinchGestureRecognizer];
+}
+
 - (BOOL)canBecomeFirstResponder
 {
     return YES;
@@ -235,7 +281,7 @@
 - (UIMenuItem *)recallMenuItem
 {
     if (_recallMenuItem == nil) {
-        _recallMenuItem = [[UIMenuItem alloc] initWithTitle:[@"ChatRecall" ag_localized] action:@selector(recallMenuItemAction:)];
+        _recallMenuItem = [[UIMenuItem alloc] initWithTitle:[@"fcr_hyphenate_im_recall" ag_localized] action:@selector(recallMenuItemAction:)];
     }
     
     return _recallMenuItem;
@@ -247,6 +293,56 @@
         _msgsToDel = [NSMutableArray<NSString*> array];
     }
     return _msgsToDel;
+}
+
+- (UIButton*)muteAllButton
+{
+    if(!_muteAllButton) {
+        _muteAllButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _muteAllButton.layer.cornerRadius = 15;
+        _muteAllButton.layer.borderWidth = 1;
+        _muteAllButton.imageEdgeInsets = UIEdgeInsetsMake(3, 3, 3, 3);
+        _muteAllButton.contentMode = UIViewContentModeScaleAspectFit;
+        _muteAllButton.layer.borderColor = [UIColor colorWithRed:236/255.0 green:236/255.0 blue:241/255.0 alpha:1.0].CGColor;
+        _muteAllButton.backgroundColor = [UIColor colorWithRed:249/255.0 green:249/255.0 blue:252/255.0 alpha:1.0];
+        [_muteAllButton setImage:[UIImage ag_image:@"icon_mute"] forState:UIControlStateNormal];
+        [_muteAllButton setImage:[UIImage ag_image:@"icon_unmute"] forState:UIControlStateSelected];
+        [_muteAllButton addTarget:self action:@selector(muteAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _muteAllButton;
+}
+
+- (void)muteAction
+{
+    [self.chatManager muteAllMembers:!self.muteAllButton.isSelected
+    ];
+}
+
+- (void)setChatManager:(ChatManager *)chatManager
+{
+    _chatManager = chatManager;
+    if(_chatManager.userConfig.role != 2){
+        // 老师
+        [self addSubview:self.muteAllButton];
+        [self.chatBar mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.right.equalTo(self).offset(-50);
+        }];
+        [self.muteAllButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.height.equalTo(@30);
+            make.centerY.equalTo(self.chatBar);
+            make.right.equalTo(self).offset(-10);
+        }];
+        [_chatManager addObserver:self forKeyPath:@"isAllMuted" options:NSKeyValueObservingOptionNew context:nil];
+    }
+    
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
+                        change:(NSDictionary *)change context:(void *)context {
+    if (object == self.chatManager) {
+        self.muteAllButton.selected = self.chatManager.isAllMuted;
+        return;
+    }
 }
 
 #pragma mark - UITableViewDelegate
@@ -267,20 +363,20 @@
     } else if ([obj isKindOfClass:[EMMessageModel class]]) {
         EMMessageModel *model = (EMMessageModel *)obj;
         if (model.type == EMMessageTypeExtRecall) {
-            cellString = [@"ChatRecallAMessage" ag_localized];
+            cellString = [@"fcr_hyphenate_im_recall_a_message" ag_localized];
         }
         if (model.emModel.body.type == EMMessageBodyTypeCmd) {
             EMCmdMessageBody* cmdBody = (EMCmdMessageBody*)model.emModel.body;
             NSString*action = cmdBody.action;
             NSDictionary* ext = model.emModel.ext;
             if([action isEqualToString:@"DEL"]) {
-                cellString = [@"ChatTeacherRemoveMsg" ag_localized];
+                cellString = [@"fcr_hyphenate_im_teacher_remove_message" ag_localized];
             }
             if([action isEqualToString:@"setAllMute"]) {
-                cellString = [@"ChatTeacherMuteAll" ag_localized];
+                cellString = [@"fcr_hyphenate_im_teacher_mute_all" ag_localized];
             }
             if([action isEqualToString:@"removeAllMute"]) {
-                cellString = [@"ChatTeacherUnmuteAll" ag_localized];
+                cellString = [@"fcr_hyphenate_im_teacher_unmute_all" ag_localized];
             }
             if([action isEqualToString:@"mute"] || [action isEqualToString:@"unmute"]) {
                 NSString* muteMember = [ext objectForKey:@"muteMember"];
@@ -289,9 +385,13 @@
                     NSString* muteNickname = [ext objectForKey:@"muteNickName"];
                     NSString* teacherNickName = [ext objectForKey:@"nickName"];
                     if([action isEqualToString:@"mute"]) {
-                        cellString = [NSString stringWithFormat: [@"ChatMutedByTeacher" ag_localized],teacherNickName];
+                        NSString *str = [@"fcr_hyphenate_im_muted_by_teacher" ag_localized];
+                        cellString = [str stringByReplacingOccurrencesOfString:Ag_localized_replacing
+                                                                    withString:teacherNickName];
                     }else{
-                        cellString = [NSString stringWithFormat: [@"ChatUnmutedByTeacher" ag_localized],teacherNickName];
+                        NSString *str = [@"fcr_hyphenate_im_unmuted_by_teacher" ag_localized];
+                        cellString = [str stringByReplacingOccurrencesOfString:Ag_localized_replacing
+                                                                    withString:teacherNickName];
                     }
                     
                 }
@@ -431,9 +531,33 @@
 #pragma mark - EMMessageCellDelegate
 - (void)messageCellDidSelected:(EMMessageCell *)aCell
 {
+    if(aCell && aCell.model.type == EMMessageTypeImage) {
+        UIWindow * window=[[[UIApplication sharedApplication] delegate] window];
+        EMImageMessageBody *imageBody = (EMImageMessageBody*)aCell.model.emModel.body;
+        
+        if(imageBody.remotePath.length > 0) {
+            NSURL* url = [NSURL URLWithString:imageBody.remotePath];
+            if(url) {
+                [self.fullImageView sd_setImageWithURL:url completed:nil];
+                [window addSubview:self.fullImageView];
+                self.fullImageView.frame = window.frame;
+            }
+        }
+    }
     
 }
 
+- (void)handleTapAction:(UITapGestureRecognizer *)aTap
+{
+    if (aTap.state == UIGestureRecognizerStateEnded) {
+        [self.fullImageView removeFromSuperview];
+    }
+}
+
+- (void)imageDataWillSend:(NSData*)aImageData
+{
+    [self.delegate imageDataWillSend:aImageData];
+}
 
 - (void)recallMenuItemAction:(UIMenuItem *)aItem
 {
@@ -447,7 +571,7 @@
     
     [[EMClient sharedClient].chatManager recallMessageWithMessageId:model.emModel.messageId completion:^(EMError *aError) {
         if (!aError) {
-            EMTextMessageBody *body = [[EMTextMessageBody alloc] initWithText:[@"ChatRecallAMessage" ag_localized]];
+            EMTextMessageBody *body = [[EMTextMessageBody alloc] initWithText:[@"fcr_hyphenate_im_recall_a_message" ag_localized]];
             NSString *from = [[EMClient sharedClient] currentUsername];
             NSString *to = self.chatManager.chatRoomId;
             EMMessage *message = [[EMMessage alloc] initWithConversationID:to from:from to:to body:body ext:@{MSG_EXT_RECALL:@(YES)}];

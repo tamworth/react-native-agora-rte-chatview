@@ -7,10 +7,8 @@
 
 #import "ChatTopView.h"
 #import <Masonry/Masonry.h>
-#import "AGResourceManager.h"
 @import AgoraUIBaseViews;
-//#import <AgoraWidgets/AgoraWidgets-Swift.h>
-
+#import "AGResourceManager.h"
 
 const static NSInteger TAG_BASE = 1000;
 
@@ -49,7 +47,7 @@ const static NSInteger TAG_BASE = 1000;
     int width = 16;
     self.hideButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.hideButton.tag = TAG_BASE + 2;
-    [self.hideButton setImage:[UIImage ag_image:@"z"] forState:UIControlStateNormal];
+    [self.hideButton setImage:[UIImage ag_image:@"icon_hide"] forState:UIControlStateNormal];
     [self.hideButton addTarget:self action:@selector(hideAction) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.hideButton];
     [self.hideButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -69,7 +67,7 @@ const static NSInteger TAG_BASE = 1000;
     }];
     
     self.chatButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.chatButton setTitle:[@"ChatText" ag_localized] forState:UIControlStateNormal];
+    [self.chatButton setTitle:[@"fcr_hyphenate_im_chat" ag_localized] forState:UIControlStateNormal];
     [self.chatButton setTitleColor:[UIColor colorWithRed:25/255.0 green:25/255.0 blue:25/255.0 alpha:1.0] forState:UIControlStateNormal];
     self.chatButton.tag = TAG_BASE;
     self.chatButton.titleLabel.font = [UIFont systemFontOfSize:12];
@@ -95,7 +93,7 @@ const static NSInteger TAG_BASE = 1000;
     }];
     
     self.announcementButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.announcementButton setTitle:[@"ChatAnnouncement" ag_localized] forState:UIControlStateNormal];
+    [self.announcementButton setTitle:[@"fcr_hyphenate_im_announcement" ag_localized] forState:UIControlStateNormal];
     self.announcementButton.tag = TAG_BASE + 1;
     self.announcementButton.titleLabel.font = [UIFont systemFontOfSize:12];
     [self.announcementButton addTarget:self action:@selector(clickAction:) forControlEvents:UIControlEventTouchUpInside];

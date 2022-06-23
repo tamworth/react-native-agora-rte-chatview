@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)msgWillSend:(NSString*)aMsgText;
 - (void)keyBoardDidHide:(NSString*)aText;
+- (void)imageButtonDidClick;
 
 @end
 

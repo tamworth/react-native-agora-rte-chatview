@@ -7,7 +7,6 @@
 
 #import "InputingView.h"
 #import "EmojiKeyboardView.h"
-//#import <AgoraWidgets/AgoraWidgets-Swift.h>
 #import "AGResourceManager.h"
 @import AgoraUIBaseViews;
 
@@ -15,11 +14,12 @@
 #define SENDBUTTON_HEIGHT 30
 #define SENDBUTTON_WIDTH 60
 #define INPUT_WIDTH 120
-#define EMOJIBUTTON_WIDTH 40
+#define EMOJIBUTTON_WIDTH 30
 #define GAP 60
 
 @interface InputingView ()<UITextFieldDelegate,EmojiKeyboardDelegate>
 @property (nonatomic,strong) EmojiKeyboardView *emojiKeyBoardView;
+@property (nonatomic,strong) UIButton* imageButton;
 @end
 
 @implementation InputingView
@@ -41,7 +41,7 @@
 - (void)setupSubViews
 {
     self.sendButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.sendButton setTitle:[@"ChatSendText" ag_localized]
+    [self.sendButton setTitle:[@"fcr_hyphenate_im_send" ag_localized]
                      forState:UIControlStateNormal];
     [self addSubview:self.sendButton];
     self.sendButton.backgroundColor = [UIColor colorWithRed:53/255.0 green:123/255.0 blue:246/255.0 alpha:1.0];
@@ -56,7 +56,7 @@
               forControlEvents:UIControlEventTouchUpInside];
     
     self.backgroundColor = [UIColor colorWithRed:236/255.0 green:236/255.0 blue:241/255.0 alpha:1.0];
-    self.inputField = [[UITextField alloc] initWithFrame:CGRectMake(GAP,5,self.bounds.size.width - EMOJIBUTTON_WIDTH - SENDBUTTON_WIDTH - GAP*2-20,
+    self.inputField = [[UITextField alloc] initWithFrame:CGRectMake(GAP,5,self.bounds.size.width - EMOJIBUTTON_WIDTH*2 - SENDBUTTON_WIDTH - GAP*2-20,
                                                                     CONTAINVIEW_HEIGHT-10)];
     self.inputField.layer.backgroundColor = [UIColor whiteColor].CGColor;
     self.inputField.layer.cornerRadius = 16;
@@ -64,7 +64,7 @@
     self.inputField.leftView.userInteractionEnabled = NO;
     self.inputField.leftViewMode = UITextFieldViewModeAlways;
     self.inputField.backgroundColor = [UIColor whiteColor];
-    self.inputField.placeholder = [@"ChatPlaceholderText" ag_localized];
+    self.inputField.placeholder = [@"fcr_hyphenate_im_input_placeholder" ag_localized];
     //self.inputField.layer.cornerRadius = 15;
     self.inputField.returnKeyType = UIReturnKeySend;
     self.inputField.delegate = self;
@@ -78,7 +78,7 @@
     [self.emojiButton setImage:[UIImage ag_image:@"icon_keyboard"]
                       forState:UIControlStateSelected];
     self.emojiButton.contentMode = UIViewContentModeScaleAspectFit;
-    self.emojiButton.frame = CGRectMake(self.bounds.size.width - EMOJIBUTTON_WIDTH - SENDBUTTON_WIDTH - GAP,
+    self.emojiButton.frame = CGRectMake(self.bounds.size.width - EMOJIBUTTON_WIDTH*2 - SENDBUTTON_WIDTH - GAP,
                                         8,
                                         24,
                                         24);
@@ -89,6 +89,19 @@
     
     self.emojiKeyBoardView = [[EmojiKeyboardView alloc] initWithFrame:CGRectMake(0,0,self.bounds.size.width,176)];
     self.emojiKeyBoardView.delegate = self;
+    
+    self.imageButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.imageButton setImage:[UIImage ag_image:@"icon_image"]
+                      forState:UIControlStateNormal];
+    self.imageButton.contentMode = UIViewContentModeScaleAspectFit;
+    self.imageButton.frame = CGRectMake(self.bounds.size.width - EMOJIBUTTON_WIDTH - SENDBUTTON_WIDTH - GAP,
+                                        9,
+                                        22,
+                                        22);
+    [self addSubview:self.imageButton];
+    [self.imageButton addTarget:self
+                         action:@selector(imageButtonAction)
+               forControlEvents:UIControlEventTouchUpInside];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillChangeFrame:)
@@ -129,6 +142,22 @@
 {
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(sendMsg) object:nil];
     [self performSelector:@selector(sendMsg) withObject:nil afterDelay:0.1];
+}
+
+- (void)imageButtonAction
+{
+    if(self.delegate && [self.delegate respondsToSelector:@selector(imageButtonDidClick)]) {
+        [self.delegate imageButtonDidClick];
+    }
+    [self exit];
+}
+
+- (void)exit
+{
+    self.hidden = YES;
+    self.exitInputButton.hidden = YES;
+    self.inputField.text = @"";
+    [self.inputField resignFirstResponder];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -197,6 +226,7 @@
 {
     return YES;
 }
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

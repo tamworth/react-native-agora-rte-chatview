@@ -22,4 +22,11 @@
     }
     return  self;
 }
+
+- (NSString*)avatarurl
+{
+    if(_avatarurl.length == 0)
+        _avatarurl = @"https://download-sdk.oss-cn-beijing.aliyuncs.com/downloads/IMDemo/avatar/Image1.png";
+    return _avatarurl;
+}
 @end

@@ -9,26 +9,25 @@
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RCTAgoraRteChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RCTAgoraRteChatView.m */; };
 		DD2E48F62861DB5300D16060 /* RCTAgoraRteChatViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E48F52861DB5300D16060 /* RCTAgoraRteChatViewManager.m */; };
-		DD2E49422861EB4500D16060 /* EMDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E48FA2861EB4500D16060 /* EMDateHelper.m */; };
-		DD2E49432861EB4500D16060 /* EMEmojiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E48FC2861EB4500D16060 /* EMEmojiHelper.m */; };
-		DD2E49442861EB4500D16060 /* EmojiKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E48FD2861EB4500D16060 /* EmojiKeyboardView.m */; };
-		DD2E49452861EB4500D16060 /* ChatWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49042861EB4500D16060 /* ChatWidget.m */; };
-		DD2E49462861EB4500D16060 /* ChatUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49052861EB4500D16060 /* ChatUserConfig.m */; };
-		DD2E49472861EB4500D16060 /* ChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49072861EB4500D16060 /* ChatManager.m */; };
-		DD2E49482861EB4500D16060 /* AnnouncementView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E490A2861EB4500D16060 /* AnnouncementView.m */; };
-		DD2E49492861EB4500D16060 /* ChatBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E490E2861EB4500D16060 /* ChatBar.m */; };
-		DD2E494A2861EB4500D16060 /* EMMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49112861EB4500D16060 /* EMMessageCell.m */; };
-		DD2E494B2861EB4500D16060 /* EMMessageStringCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49122861EB4500D16060 /* EMMessageStringCell.m */; };
-		DD2E494C2861EB4500D16060 /* EMMessageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49132861EB4500D16060 /* EMMessageStatusView.m */; };
-		DD2E494D2861EB4500D16060 /* EMMsgImageBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49192861EB4500D16060 /* EMMsgImageBubbleView.m */; };
-		DD2E494E2861EB4500D16060 /* EMMsgTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E491A2861EB4500D16060 /* EMMsgTextBubbleView.m */; };
-		DD2E494F2861EB4500D16060 /* EMMessageBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E491B2861EB4500D16060 /* EMMessageBubbleView.m */; };
-		DD2E49502861EB4500D16060 /* InputingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E493B2861EB4500D16060 /* InputingView.m */; };
-		DD2E49512861EB4500D16060 /* EMMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E493C2861EB4500D16060 /* EMMessageModel.m */; };
-		DD2E49522861EB4500D16060 /* ChatTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E493E2861EB4500D16060 /* ChatTopView.m */; };
-		DD2E49532861EB4500D16060 /* CustomBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49402861EB4500D16060 /* CustomBadgeView.m */; };
-		DD2E49542861EB4500D16060 /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E49412861EB4500D16060 /* ChatView.m */; };
-		DD2E4964286346A700D16060 /* AGResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E4963286346A700D16060 /* AGResourceManager.m */; };
+		DDD7A83128646E05008BE80F /* AGResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A7E928646E05008BE80F /* AGResourceManager.m */; };
+		DDD7A83228646E05008BE80F /* EMDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A7EA28646E05008BE80F /* EMDateHelper.m */; };
+		DDD7A83328646E05008BE80F /* EMEmojiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A7EC28646E05008BE80F /* EMEmojiHelper.m */; };
+		DDD7A83428646E05008BE80F /* EmojiKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A7ED28646E05008BE80F /* EmojiKeyboardView.m */; };
+		DDD7A83528646E05008BE80F /* ChatUserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A7F428646E05008BE80F /* ChatUserConfig.m */; };
+		DDD7A83628646E05008BE80F /* ChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A7F628646E05008BE80F /* ChatManager.m */; };
+		DDD7A83728646E05008BE80F /* AnnouncementView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A7F928646E05008BE80F /* AnnouncementView.m */; };
+		DDD7A83828646E05008BE80F /* ChatBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A7FD28646E05008BE80F /* ChatBar.m */; };
+		DDD7A83928646E05008BE80F /* EMMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A80028646E05008BE80F /* EMMessageCell.m */; };
+		DDD7A83A28646E05008BE80F /* EMMessageStringCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A80128646E05008BE80F /* EMMessageStringCell.m */; };
+		DDD7A83B28646E05008BE80F /* EMMessageStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A80228646E05008BE80F /* EMMessageStatusView.m */; };
+		DDD7A83C28646E05008BE80F /* EMMsgImageBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A80828646E05008BE80F /* EMMsgImageBubbleView.m */; };
+		DDD7A83D28646E05008BE80F /* EMMsgTextBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A80928646E05008BE80F /* EMMsgTextBubbleView.m */; };
+		DDD7A83E28646E05008BE80F /* EMMessageBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A80A28646E05008BE80F /* EMMessageBubbleView.m */; };
+		DDD7A83F28646E05008BE80F /* InputingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A82A28646E05008BE80F /* InputingView.m */; };
+		DDD7A84028646E05008BE80F /* EMMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A82B28646E05008BE80F /* EMMessageModel.m */; };
+		DDD7A84128646E05008BE80F /* ChatTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A82D28646E05008BE80F /* ChatTopView.m */; };
+		DDD7A84228646E05008BE80F /* CustomBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A82F28646E05008BE80F /* CustomBadgeView.m */; };
+		DDD7A84328646E05008BE80F /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD7A83028646E05008BE80F /* ChatView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,76 +48,74 @@
 		B3E7B5891CC2AC0600A0062D /* RCTAgoraRteChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTAgoraRteChatView.m; sourceTree = "<group>"; };
 		DD2E48F42861DB5300D16060 /* RCTAgoraRteChatViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTAgoraRteChatViewManager.h; sourceTree = "<group>"; };
 		DD2E48F52861DB5300D16060 /* RCTAgoraRteChatViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTAgoraRteChatViewManager.m; sourceTree = "<group>"; };
-		DD2E48F92861EB4500D16060 /* EMDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMDateHelper.h; sourceTree = "<group>"; };
-		DD2E48FA2861EB4500D16060 /* EMDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMDateHelper.m; sourceTree = "<group>"; };
-		DD2E48FC2861EB4500D16060 /* EMEmojiHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMEmojiHelper.m; sourceTree = "<group>"; };
-		DD2E48FD2861EB4500D16060 /* EmojiKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiKeyboardView.m; sourceTree = "<group>"; };
-		DD2E48FE2861EB4500D16060 /* EMEmojiHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMEmojiHelper.h; sourceTree = "<group>"; };
-		DD2E48FF2861EB4500D16060 /* EmojiKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiKeyboardView.h; sourceTree = "<group>"; };
-		DD2E49012861EB4500D16060 /* ChatWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatWidget.h; sourceTree = "<group>"; };
-		DD2E49022861EB4500D16060 /* ChatUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatUserConfig.h; sourceTree = "<group>"; };
-		DD2E49032861EB4500D16060 /* ChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatManager.h; sourceTree = "<group>"; };
-		DD2E49042861EB4500D16060 /* ChatWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatWidget.m; sourceTree = "<group>"; };
-		DD2E49052861EB4500D16060 /* ChatUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatUserConfig.m; sourceTree = "<group>"; };
-		DD2E49062861EB4500D16060 /* ChatWidgetDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatWidgetDefine.h; sourceTree = "<group>"; };
-		DD2E49072861EB4500D16060 /* ChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatManager.m; sourceTree = "<group>"; };
-		DD2E49092861EB4500D16060 /* EMMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageModel.h; sourceTree = "<group>"; };
-		DD2E490A2861EB4500D16060 /* AnnouncementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementView.m; sourceTree = "<group>"; };
-		DD2E490B2861EB4500D16060 /* InputingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputingView.h; sourceTree = "<group>"; };
-		DD2E490C2861EB4500D16060 /* ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatView.h; sourceTree = "<group>"; };
-		DD2E490D2861EB4500D16060 /* CustomBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadgeView.h; sourceTree = "<group>"; };
-		DD2E490E2861EB4500D16060 /* ChatBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBar.m; sourceTree = "<group>"; };
-		DD2E490F2861EB4500D16060 /* ChatTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTopView.h; sourceTree = "<group>"; };
-		DD2E49112861EB4500D16060 /* EMMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageCell.m; sourceTree = "<group>"; };
-		DD2E49122861EB4500D16060 /* EMMessageStringCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageStringCell.m; sourceTree = "<group>"; };
-		DD2E49132861EB4500D16060 /* EMMessageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageStatusView.m; sourceTree = "<group>"; };
-		DD2E49142861EB4500D16060 /* EMMessageStringCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageStringCell.h; sourceTree = "<group>"; };
-		DD2E49162861EB4500D16060 /* EMMsgImageBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMsgImageBubbleView.h; sourceTree = "<group>"; };
-		DD2E49172861EB4500D16060 /* EMMessageBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageBubbleView.h; sourceTree = "<group>"; };
-		DD2E49182861EB4500D16060 /* EMMsgTextBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMsgTextBubbleView.h; sourceTree = "<group>"; };
-		DD2E49192861EB4500D16060 /* EMMsgImageBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMsgImageBubbleView.m; sourceTree = "<group>"; };
-		DD2E491A2861EB4500D16060 /* EMMsgTextBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMsgTextBubbleView.m; sourceTree = "<group>"; };
-		DD2E491B2861EB4500D16060 /* EMMessageBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageBubbleView.m; sourceTree = "<group>"; };
-		DD2E491C2861EB4500D16060 /* EMMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageCell.h; sourceTree = "<group>"; };
-		DD2E491E2861EB4500D16060 /* msg_recv_audio02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio02@2x.png"; sourceTree = "<group>"; };
-		DD2E491F2861EB4500D16060 /* msg_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location@2x.png"; sourceTree = "<group>"; };
-		DD2E49202861EB4500D16060 /* msg_location_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location_white@3x.png"; sourceTree = "<group>"; };
-		DD2E49212861EB4500D16060 /* msg_bg_send@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_bg_send@3x.png"; sourceTree = "<group>"; };
-		DD2E49222861EB4500D16060 /* msg_send_audio02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio02@3x.png"; sourceTree = "<group>"; };
-		DD2E49232861EB4500D16060 /* msg_send_audio02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio02@2x.png"; sourceTree = "<group>"; };
-		DD2E49242861EB4500D16060 /* msg_location_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location_white@2x.png"; sourceTree = "<group>"; };
-		DD2E49252861EB4500D16060 /* msg_recv_audio02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio02@3x.png"; sourceTree = "<group>"; };
-		DD2E49262861EB4500D16060 /* msg_location@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location@3x.png"; sourceTree = "<group>"; };
-		DD2E49272861EB4500D16060 /* msg_fail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_fail@2x.png"; sourceTree = "<group>"; };
-		DD2E49282861EB4500D16060 /* msg_fail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_fail@3x.png"; sourceTree = "<group>"; };
-		DD2E49292861EB4500D16060 /* msg_send_audio@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio@3x.png"; sourceTree = "<group>"; };
-		DD2E492A2861EB4500D16060 /* msg_send_audio01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio01@2x.png"; sourceTree = "<group>"; };
-		DD2E492B2861EB4500D16060 /* msg_recv_audio01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio01@3x.png"; sourceTree = "<group>"; };
-		DD2E492C2861EB4500D16060 /* msg_recv_audio01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio01@2x.png"; sourceTree = "<group>"; };
-		DD2E492D2861EB4500D16060 /* msg_send_audio01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio01@3x.png"; sourceTree = "<group>"; };
-		DD2E492E2861EB4500D16060 /* msg_send_audio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio@2x.png"; sourceTree = "<group>"; };
-		DD2E492F2861EB4500D16060 /* msg_recv_audio@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio@3x.png"; sourceTree = "<group>"; };
-		DD2E49302861EB4500D16060 /* msg_file_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file_white@2x.png"; sourceTree = "<group>"; };
-		DD2E49312861EB4500D16060 /* msg_file@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file@3x.png"; sourceTree = "<group>"; };
-		DD2E49322861EB4500D16060 /* msg_img_broken@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_img_broken@2x.png"; sourceTree = "<group>"; };
-		DD2E49332861EB4500D16060 /* msg_video_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_video_white@2x.png"; sourceTree = "<group>"; };
-		DD2E49342861EB4500D16060 /* msg_bg_recv@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_bg_recv@3x.png"; sourceTree = "<group>"; };
-		DD2E49352861EB4500D16060 /* msg_video_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_video_white@3x.png"; sourceTree = "<group>"; };
-		DD2E49362861EB4500D16060 /* msg_img_broken@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_img_broken@3x.png"; sourceTree = "<group>"; };
-		DD2E49372861EB4500D16060 /* msg_file@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file@2x.png"; sourceTree = "<group>"; };
-		DD2E49382861EB4500D16060 /* msg_file_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file_white@3x.png"; sourceTree = "<group>"; };
-		DD2E49392861EB4500D16060 /* msg_recv_audio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio@2x.png"; sourceTree = "<group>"; };
-		DD2E493A2861EB4500D16060 /* EMMessageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageStatusView.h; sourceTree = "<group>"; };
-		DD2E493B2861EB4500D16060 /* InputingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputingView.m; sourceTree = "<group>"; };
-		DD2E493C2861EB4500D16060 /* EMMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageModel.m; sourceTree = "<group>"; };
-		DD2E493D2861EB4500D16060 /* AnnouncementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementView.h; sourceTree = "<group>"; };
-		DD2E493E2861EB4500D16060 /* ChatTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTopView.m; sourceTree = "<group>"; };
-		DD2E493F2861EB4500D16060 /* ChatBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBar.h; sourceTree = "<group>"; };
-		DD2E49402861EB4500D16060 /* CustomBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBadgeView.m; sourceTree = "<group>"; };
-		DD2E49412861EB4500D16060 /* ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatView.m; sourceTree = "<group>"; };
-		DD2E496128632F8500D16060 /* AgoraRteChat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AgoraRteChat.bundle; sourceTree = "<group>"; };
-		DD2E4962286346A700D16060 /* AGResourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGResourceManager.h; sourceTree = "<group>"; };
-		DD2E4963286346A700D16060 /* AGResourceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGResourceManager.m; sourceTree = "<group>"; };
+		DDD7A7E728646E05008BE80F /* AGResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGResourceManager.h; sourceTree = "<group>"; };
+		DDD7A7E828646E05008BE80F /* EMDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMDateHelper.h; sourceTree = "<group>"; };
+		DDD7A7E928646E05008BE80F /* AGResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGResourceManager.m; sourceTree = "<group>"; };
+		DDD7A7EA28646E05008BE80F /* EMDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMDateHelper.m; sourceTree = "<group>"; };
+		DDD7A7EC28646E05008BE80F /* EMEmojiHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMEmojiHelper.m; sourceTree = "<group>"; };
+		DDD7A7ED28646E05008BE80F /* EmojiKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiKeyboardView.m; sourceTree = "<group>"; };
+		DDD7A7EE28646E05008BE80F /* EMEmojiHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMEmojiHelper.h; sourceTree = "<group>"; };
+		DDD7A7EF28646E05008BE80F /* EmojiKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiKeyboardView.h; sourceTree = "<group>"; };
+		DDD7A7F028646E05008BE80F /* AgoraRteChat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AgoraRteChat.bundle; sourceTree = "<group>"; };
+		DDD7A7F228646E05008BE80F /* ChatUserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatUserConfig.h; sourceTree = "<group>"; };
+		DDD7A7F328646E05008BE80F /* ChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatManager.h; sourceTree = "<group>"; };
+		DDD7A7F428646E05008BE80F /* ChatUserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatUserConfig.m; sourceTree = "<group>"; };
+		DDD7A7F528646E05008BE80F /* ChatWidgetDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatWidgetDefine.h; sourceTree = "<group>"; };
+		DDD7A7F628646E05008BE80F /* ChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatManager.m; sourceTree = "<group>"; };
+		DDD7A7F828646E05008BE80F /* EMMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageModel.h; sourceTree = "<group>"; };
+		DDD7A7F928646E05008BE80F /* AnnouncementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnouncementView.m; sourceTree = "<group>"; };
+		DDD7A7FA28646E05008BE80F /* InputingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputingView.h; sourceTree = "<group>"; };
+		DDD7A7FB28646E05008BE80F /* ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatView.h; sourceTree = "<group>"; };
+		DDD7A7FC28646E05008BE80F /* CustomBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadgeView.h; sourceTree = "<group>"; };
+		DDD7A7FD28646E05008BE80F /* ChatBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBar.m; sourceTree = "<group>"; };
+		DDD7A7FE28646E05008BE80F /* ChatTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTopView.h; sourceTree = "<group>"; };
+		DDD7A80028646E05008BE80F /* EMMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageCell.m; sourceTree = "<group>"; };
+		DDD7A80128646E05008BE80F /* EMMessageStringCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageStringCell.m; sourceTree = "<group>"; };
+		DDD7A80228646E05008BE80F /* EMMessageStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageStatusView.m; sourceTree = "<group>"; };
+		DDD7A80328646E05008BE80F /* EMMessageStringCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageStringCell.h; sourceTree = "<group>"; };
+		DDD7A80528646E05008BE80F /* EMMsgImageBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMsgImageBubbleView.h; sourceTree = "<group>"; };
+		DDD7A80628646E05008BE80F /* EMMessageBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageBubbleView.h; sourceTree = "<group>"; };
+		DDD7A80728646E05008BE80F /* EMMsgTextBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMsgTextBubbleView.h; sourceTree = "<group>"; };
+		DDD7A80828646E05008BE80F /* EMMsgImageBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMsgImageBubbleView.m; sourceTree = "<group>"; };
+		DDD7A80928646E05008BE80F /* EMMsgTextBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMsgTextBubbleView.m; sourceTree = "<group>"; };
+		DDD7A80A28646E05008BE80F /* EMMessageBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageBubbleView.m; sourceTree = "<group>"; };
+		DDD7A80B28646E05008BE80F /* EMMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageCell.h; sourceTree = "<group>"; };
+		DDD7A80D28646E05008BE80F /* msg_recv_audio02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio02@2x.png"; sourceTree = "<group>"; };
+		DDD7A80E28646E05008BE80F /* msg_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location@2x.png"; sourceTree = "<group>"; };
+		DDD7A80F28646E05008BE80F /* msg_location_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location_white@3x.png"; sourceTree = "<group>"; };
+		DDD7A81028646E05008BE80F /* msg_bg_send@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_bg_send@3x.png"; sourceTree = "<group>"; };
+		DDD7A81128646E05008BE80F /* msg_send_audio02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio02@3x.png"; sourceTree = "<group>"; };
+		DDD7A81228646E05008BE80F /* msg_send_audio02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio02@2x.png"; sourceTree = "<group>"; };
+		DDD7A81328646E05008BE80F /* msg_location_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location_white@2x.png"; sourceTree = "<group>"; };
+		DDD7A81428646E05008BE80F /* msg_recv_audio02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio02@3x.png"; sourceTree = "<group>"; };
+		DDD7A81528646E05008BE80F /* msg_location@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_location@3x.png"; sourceTree = "<group>"; };
+		DDD7A81628646E05008BE80F /* msg_fail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_fail@2x.png"; sourceTree = "<group>"; };
+		DDD7A81728646E05008BE80F /* msg_fail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_fail@3x.png"; sourceTree = "<group>"; };
+		DDD7A81828646E05008BE80F /* msg_send_audio@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio@3x.png"; sourceTree = "<group>"; };
+		DDD7A81928646E05008BE80F /* msg_send_audio01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio01@2x.png"; sourceTree = "<group>"; };
+		DDD7A81A28646E05008BE80F /* msg_recv_audio01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio01@3x.png"; sourceTree = "<group>"; };
+		DDD7A81B28646E05008BE80F /* msg_recv_audio01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio01@2x.png"; sourceTree = "<group>"; };
+		DDD7A81C28646E05008BE80F /* msg_send_audio01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio01@3x.png"; sourceTree = "<group>"; };
+		DDD7A81D28646E05008BE80F /* msg_send_audio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_send_audio@2x.png"; sourceTree = "<group>"; };
+		DDD7A81E28646E05008BE80F /* msg_recv_audio@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio@3x.png"; sourceTree = "<group>"; };
+		DDD7A81F28646E05008BE80F /* msg_file_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file_white@2x.png"; sourceTree = "<group>"; };
+		DDD7A82028646E05008BE80F /* msg_file@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file@3x.png"; sourceTree = "<group>"; };
+		DDD7A82128646E05008BE80F /* msg_img_broken@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_img_broken@2x.png"; sourceTree = "<group>"; };
+		DDD7A82228646E05008BE80F /* msg_video_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_video_white@2x.png"; sourceTree = "<group>"; };
+		DDD7A82328646E05008BE80F /* msg_bg_recv@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_bg_recv@3x.png"; sourceTree = "<group>"; };
+		DDD7A82428646E05008BE80F /* msg_video_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_video_white@3x.png"; sourceTree = "<group>"; };
+		DDD7A82528646E05008BE80F /* msg_img_broken@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_img_broken@3x.png"; sourceTree = "<group>"; };
+		DDD7A82628646E05008BE80F /* msg_file@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file@2x.png"; sourceTree = "<group>"; };
+		DDD7A82728646E05008BE80F /* msg_file_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_file_white@3x.png"; sourceTree = "<group>"; };
+		DDD7A82828646E05008BE80F /* msg_recv_audio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg_recv_audio@2x.png"; sourceTree = "<group>"; };
+		DDD7A82928646E05008BE80F /* EMMessageStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageStatusView.h; sourceTree = "<group>"; };
+		DDD7A82A28646E05008BE80F /* InputingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputingView.m; sourceTree = "<group>"; };
+		DDD7A82B28646E05008BE80F /* EMMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMessageModel.m; sourceTree = "<group>"; };
+		DDD7A82C28646E05008BE80F /* AnnouncementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnouncementView.h; sourceTree = "<group>"; };
+		DDD7A82D28646E05008BE80F /* ChatTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTopView.m; sourceTree = "<group>"; };
+		DDD7A82E28646E05008BE80F /* ChatBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBar.h; sourceTree = "<group>"; };
+		DDD7A82F28646E05008BE80F /* CustomBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBadgeView.m; sourceTree = "<group>"; };
+		DDD7A83028646E05008BE80F /* ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +140,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				DD2E48F72861EB4500D16060 /* ChatWidget */,
+				DDD7A7E528646E05008BE80F /* ChatWidget */,
 				DD2E48F42861DB5300D16060 /* RCTAgoraRteChatViewManager.h */,
 				DD2E48F52861DB5300D16060 /* RCTAgoraRteChatViewManager.m */,
 				B3E7B5881CC2AC0600A0062D /* RCTAgoraRteChatView.h */,
@@ -152,135 +149,133 @@
 			);
 			sourceTree = "<group>";
 		};
-		DD2E48F72861EB4500D16060 /* ChatWidget */ = {
+		DDD7A7E528646E05008BE80F /* ChatWidget */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E496128632F8500D16060 /* AgoraRteChat.bundle */,
-				DD2E48F82861EB4500D16060 /* Utils */,
-				DD2E48FB2861EB4500D16060 /* EmojiKeyBoard */,
-				DD2E49002861EB4500D16060 /* Main */,
-				DD2E49082861EB4500D16060 /* Views */,
+				DDD7A7E628646E05008BE80F /* Utils */,
+				DDD7A7EB28646E05008BE80F /* EmojiKeyBoard */,
+				DDD7A7F028646E05008BE80F /* AgoraRteChat.bundle */,
+				DDD7A7F128646E05008BE80F /* Main */,
+				DDD7A7F728646E05008BE80F /* Views */,
 			);
 			path = ChatWidget;
 			sourceTree = "<group>";
 		};
-		DD2E48F82861EB4500D16060 /* Utils */ = {
+		DDD7A7E628646E05008BE80F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E48F92861EB4500D16060 /* EMDateHelper.h */,
-				DD2E48FA2861EB4500D16060 /* EMDateHelper.m */,
-				DD2E4962286346A700D16060 /* AGResourceManager.h */,
-				DD2E4963286346A700D16060 /* AGResourceManager.m */,
+				DDD7A7E728646E05008BE80F /* AGResourceManager.h */,
+				DDD7A7E828646E05008BE80F /* EMDateHelper.h */,
+				DDD7A7E928646E05008BE80F /* AGResourceManager.m */,
+				DDD7A7EA28646E05008BE80F /* EMDateHelper.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		DD2E48FB2861EB4500D16060 /* EmojiKeyBoard */ = {
+		DDD7A7EB28646E05008BE80F /* EmojiKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E48FC2861EB4500D16060 /* EMEmojiHelper.m */,
-				DD2E48FD2861EB4500D16060 /* EmojiKeyboardView.m */,
-				DD2E48FE2861EB4500D16060 /* EMEmojiHelper.h */,
-				DD2E48FF2861EB4500D16060 /* EmojiKeyboardView.h */,
+				DDD7A7EC28646E05008BE80F /* EMEmojiHelper.m */,
+				DDD7A7ED28646E05008BE80F /* EmojiKeyboardView.m */,
+				DDD7A7EE28646E05008BE80F /* EMEmojiHelper.h */,
+				DDD7A7EF28646E05008BE80F /* EmojiKeyboardView.h */,
 			);
 			path = EmojiKeyBoard;
 			sourceTree = "<group>";
 		};
-		DD2E49002861EB4500D16060 /* Main */ = {
+		DDD7A7F128646E05008BE80F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E49062861EB4500D16060 /* ChatWidgetDefine.h */,
-				DD2E49032861EB4500D16060 /* ChatManager.h */,
-				DD2E49072861EB4500D16060 /* ChatManager.m */,
-				DD2E49012861EB4500D16060 /* ChatWidget.h */,
-				DD2E49042861EB4500D16060 /* ChatWidget.m */,
-				DD2E49022861EB4500D16060 /* ChatUserConfig.h */,
-				DD2E49052861EB4500D16060 /* ChatUserConfig.m */,
+				DDD7A7F228646E05008BE80F /* ChatUserConfig.h */,
+				DDD7A7F328646E05008BE80F /* ChatManager.h */,
+				DDD7A7F428646E05008BE80F /* ChatUserConfig.m */,
+				DDD7A7F528646E05008BE80F /* ChatWidgetDefine.h */,
+				DDD7A7F628646E05008BE80F /* ChatManager.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		DD2E49082861EB4500D16060 /* Views */ = {
+		DDD7A7F728646E05008BE80F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E49092861EB4500D16060 /* EMMessageModel.h */,
-				DD2E490A2861EB4500D16060 /* AnnouncementView.m */,
-				DD2E490B2861EB4500D16060 /* InputingView.h */,
-				DD2E490C2861EB4500D16060 /* ChatView.h */,
-				DD2E490D2861EB4500D16060 /* CustomBadgeView.h */,
-				DD2E490E2861EB4500D16060 /* ChatBar.m */,
-				DD2E490F2861EB4500D16060 /* ChatTopView.h */,
-				DD2E49102861EB4500D16060 /* MessageCell */,
-				DD2E493B2861EB4500D16060 /* InputingView.m */,
-				DD2E493C2861EB4500D16060 /* EMMessageModel.m */,
-				DD2E493D2861EB4500D16060 /* AnnouncementView.h */,
-				DD2E493E2861EB4500D16060 /* ChatTopView.m */,
-				DD2E493F2861EB4500D16060 /* ChatBar.h */,
-				DD2E49402861EB4500D16060 /* CustomBadgeView.m */,
-				DD2E49412861EB4500D16060 /* ChatView.m */,
+				DDD7A7F828646E05008BE80F /* EMMessageModel.h */,
+				DDD7A7F928646E05008BE80F /* AnnouncementView.m */,
+				DDD7A7FA28646E05008BE80F /* InputingView.h */,
+				DDD7A7FB28646E05008BE80F /* ChatView.h */,
+				DDD7A7FC28646E05008BE80F /* CustomBadgeView.h */,
+				DDD7A7FD28646E05008BE80F /* ChatBar.m */,
+				DDD7A7FE28646E05008BE80F /* ChatTopView.h */,
+				DDD7A7FF28646E05008BE80F /* MessageCell */,
+				DDD7A82A28646E05008BE80F /* InputingView.m */,
+				DDD7A82B28646E05008BE80F /* EMMessageModel.m */,
+				DDD7A82C28646E05008BE80F /* AnnouncementView.h */,
+				DDD7A82D28646E05008BE80F /* ChatTopView.m */,
+				DDD7A82E28646E05008BE80F /* ChatBar.h */,
+				DDD7A82F28646E05008BE80F /* CustomBadgeView.m */,
+				DDD7A83028646E05008BE80F /* ChatView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		DD2E49102861EB4500D16060 /* MessageCell */ = {
+		DDD7A7FF28646E05008BE80F /* MessageCell */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E49112861EB4500D16060 /* EMMessageCell.m */,
-				DD2E49122861EB4500D16060 /* EMMessageStringCell.m */,
-				DD2E49132861EB4500D16060 /* EMMessageStatusView.m */,
-				DD2E49142861EB4500D16060 /* EMMessageStringCell.h */,
-				DD2E49152861EB4500D16060 /* BubbleView */,
-				DD2E491C2861EB4500D16060 /* EMMessageCell.h */,
-				DD2E491D2861EB4500D16060 /* MsgCellImgs */,
-				DD2E493A2861EB4500D16060 /* EMMessageStatusView.h */,
+				DDD7A80028646E05008BE80F /* EMMessageCell.m */,
+				DDD7A80128646E05008BE80F /* EMMessageStringCell.m */,
+				DDD7A80228646E05008BE80F /* EMMessageStatusView.m */,
+				DDD7A80328646E05008BE80F /* EMMessageStringCell.h */,
+				DDD7A80428646E05008BE80F /* BubbleView */,
+				DDD7A80B28646E05008BE80F /* EMMessageCell.h */,
+				DDD7A80C28646E05008BE80F /* MsgCellImgs */,
+				DDD7A82928646E05008BE80F /* EMMessageStatusView.h */,
 			);
 			path = MessageCell;
 			sourceTree = "<group>";
 		};
-		DD2E49152861EB4500D16060 /* BubbleView */ = {
+		DDD7A80428646E05008BE80F /* BubbleView */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E49162861EB4500D16060 /* EMMsgImageBubbleView.h */,
-				DD2E49172861EB4500D16060 /* EMMessageBubbleView.h */,
-				DD2E49182861EB4500D16060 /* EMMsgTextBubbleView.h */,
-				DD2E49192861EB4500D16060 /* EMMsgImageBubbleView.m */,
-				DD2E491A2861EB4500D16060 /* EMMsgTextBubbleView.m */,
-				DD2E491B2861EB4500D16060 /* EMMessageBubbleView.m */,
+				DDD7A80528646E05008BE80F /* EMMsgImageBubbleView.h */,
+				DDD7A80628646E05008BE80F /* EMMessageBubbleView.h */,
+				DDD7A80728646E05008BE80F /* EMMsgTextBubbleView.h */,
+				DDD7A80828646E05008BE80F /* EMMsgImageBubbleView.m */,
+				DDD7A80928646E05008BE80F /* EMMsgTextBubbleView.m */,
+				DDD7A80A28646E05008BE80F /* EMMessageBubbleView.m */,
 			);
 			path = BubbleView;
 			sourceTree = "<group>";
 		};
-		DD2E491D2861EB4500D16060 /* MsgCellImgs */ = {
+		DDD7A80C28646E05008BE80F /* MsgCellImgs */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E491E2861EB4500D16060 /* msg_recv_audio02@2x.png */,
-				DD2E491F2861EB4500D16060 /* msg_location@2x.png */,
-				DD2E49202861EB4500D16060 /* msg_location_white@3x.png */,
-				DD2E49212861EB4500D16060 /* msg_bg_send@3x.png */,
-				DD2E49222861EB4500D16060 /* msg_send_audio02@3x.png */,
-				DD2E49232861EB4500D16060 /* msg_send_audio02@2x.png */,
-				DD2E49242861EB4500D16060 /* msg_location_white@2x.png */,
-				DD2E49252861EB4500D16060 /* msg_recv_audio02@3x.png */,
-				DD2E49262861EB4500D16060 /* msg_location@3x.png */,
-				DD2E49272861EB4500D16060 /* msg_fail@2x.png */,
-				DD2E49282861EB4500D16060 /* msg_fail@3x.png */,
-				DD2E49292861EB4500D16060 /* msg_send_audio@3x.png */,
-				DD2E492A2861EB4500D16060 /* msg_send_audio01@2x.png */,
-				DD2E492B2861EB4500D16060 /* msg_recv_audio01@3x.png */,
-				DD2E492C2861EB4500D16060 /* msg_recv_audio01@2x.png */,
-				DD2E492D2861EB4500D16060 /* msg_send_audio01@3x.png */,
-				DD2E492E2861EB4500D16060 /* msg_send_audio@2x.png */,
-				DD2E492F2861EB4500D16060 /* msg_recv_audio@3x.png */,
-				DD2E49302861EB4500D16060 /* msg_file_white@2x.png */,
-				DD2E49312861EB4500D16060 /* msg_file@3x.png */,
-				DD2E49322861EB4500D16060 /* msg_img_broken@2x.png */,
-				DD2E49332861EB4500D16060 /* msg_video_white@2x.png */,
-				DD2E49342861EB4500D16060 /* msg_bg_recv@3x.png */,
-				DD2E49352861EB4500D16060 /* msg_video_white@3x.png */,
-				DD2E49362861EB4500D16060 /* msg_img_broken@3x.png */,
-				DD2E49372861EB4500D16060 /* msg_file@2x.png */,
-				DD2E49382861EB4500D16060 /* msg_file_white@3x.png */,
-				DD2E49392861EB4500D16060 /* msg_recv_audio@2x.png */,
+				DDD7A80D28646E05008BE80F /* msg_recv_audio02@2x.png */,
+				DDD7A80E28646E05008BE80F /* msg_location@2x.png */,
+				DDD7A80F28646E05008BE80F /* msg_location_white@3x.png */,
+				DDD7A81028646E05008BE80F /* msg_bg_send@3x.png */,
+				DDD7A81128646E05008BE80F /* msg_send_audio02@3x.png */,
+				DDD7A81228646E05008BE80F /* msg_send_audio02@2x.png */,
+				DDD7A81328646E05008BE80F /* msg_location_white@2x.png */,
+				DDD7A81428646E05008BE80F /* msg_recv_audio02@3x.png */,
+				DDD7A81528646E05008BE80F /* msg_location@3x.png */,
+				DDD7A81628646E05008BE80F /* msg_fail@2x.png */,
+				DDD7A81728646E05008BE80F /* msg_fail@3x.png */,
+				DDD7A81828646E05008BE80F /* msg_send_audio@3x.png */,
+				DDD7A81928646E05008BE80F /* msg_send_audio01@2x.png */,
+				DDD7A81A28646E05008BE80F /* msg_recv_audio01@3x.png */,
+				DDD7A81B28646E05008BE80F /* msg_recv_audio01@2x.png */,
+				DDD7A81C28646E05008BE80F /* msg_send_audio01@3x.png */,
+				DDD7A81D28646E05008BE80F /* msg_send_audio@2x.png */,
+				DDD7A81E28646E05008BE80F /* msg_recv_audio@3x.png */,
+				DDD7A81F28646E05008BE80F /* msg_file_white@2x.png */,
+				DDD7A82028646E05008BE80F /* msg_file@3x.png */,
+				DDD7A82128646E05008BE80F /* msg_img_broken@2x.png */,
+				DDD7A82228646E05008BE80F /* msg_video_white@2x.png */,
+				DDD7A82328646E05008BE80F /* msg_bg_recv@3x.png */,
+				DDD7A82428646E05008BE80F /* msg_video_white@3x.png */,
+				DDD7A82528646E05008BE80F /* msg_img_broken@3x.png */,
+				DDD7A82628646E05008BE80F /* msg_file@2x.png */,
+				DDD7A82728646E05008BE80F /* msg_file_white@3x.png */,
+				DDD7A82828646E05008BE80F /* msg_recv_audio@2x.png */,
 			);
 			path = MsgCellImgs;
 			sourceTree = "<group>";
@@ -342,28 +337,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2E494C2861EB4500D16060 /* EMMessageStatusView.m in Sources */,
-				DD2E4964286346A700D16060 /* AGResourceManager.m in Sources */,
-				DD2E49532861EB4500D16060 /* CustomBadgeView.m in Sources */,
-				DD2E49502861EB4500D16060 /* InputingView.m in Sources */,
-				DD2E49432861EB4500D16060 /* EMEmojiHelper.m in Sources */,
-				DD2E49442861EB4500D16060 /* EmojiKeyboardView.m in Sources */,
-				DD2E494B2861EB4500D16060 /* EMMessageStringCell.m in Sources */,
-				DD2E49542861EB4500D16060 /* ChatView.m in Sources */,
-				DD2E49482861EB4500D16060 /* AnnouncementView.m in Sources */,
+				DDD7A83B28646E05008BE80F /* EMMessageStatusView.m in Sources */,
+				DDD7A84228646E05008BE80F /* CustomBadgeView.m in Sources */,
+				DDD7A83F28646E05008BE80F /* InputingView.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RCTAgoraRteChatView.m in Sources */,
-				DD2E494D2861EB4500D16060 /* EMMsgImageBubbleView.m in Sources */,
-				DD2E49522861EB4500D16060 /* ChatTopView.m in Sources */,
-				DD2E494A2861EB4500D16060 /* EMMessageCell.m in Sources */,
-				DD2E49472861EB4500D16060 /* ChatManager.m in Sources */,
-				DD2E49452861EB4500D16060 /* ChatWidget.m in Sources */,
-				DD2E49462861EB4500D16060 /* ChatUserConfig.m in Sources */,
-				DD2E494E2861EB4500D16060 /* EMMsgTextBubbleView.m in Sources */,
-				DD2E49492861EB4500D16060 /* ChatBar.m in Sources */,
-				DD2E49422861EB4500D16060 /* EMDateHelper.m in Sources */,
-				DD2E494F2861EB4500D16060 /* EMMessageBubbleView.m in Sources */,
+				DDD7A83228646E05008BE80F /* EMDateHelper.m in Sources */,
+				DDD7A83A28646E05008BE80F /* EMMessageStringCell.m in Sources */,
+				DDD7A84328646E05008BE80F /* ChatView.m in Sources */,
+				DDD7A83728646E05008BE80F /* AnnouncementView.m in Sources */,
+				DDD7A83128646E05008BE80F /* AGResourceManager.m in Sources */,
+				DDD7A83C28646E05008BE80F /* EMMsgImageBubbleView.m in Sources */,
+				DDD7A84128646E05008BE80F /* ChatTopView.m in Sources */,
+				DDD7A83928646E05008BE80F /* EMMessageCell.m in Sources */,
+				DDD7A83628646E05008BE80F /* ChatManager.m in Sources */,
+				DDD7A83328646E05008BE80F /* EMEmojiHelper.m in Sources */,
+				DDD7A83528646E05008BE80F /* ChatUserConfig.m in Sources */,
+				DDD7A83D28646E05008BE80F /* EMMsgTextBubbleView.m in Sources */,
+				DDD7A83828646E05008BE80F /* ChatBar.m in Sources */,
+				DDD7A83428646E05008BE80F /* EmojiKeyboardView.m in Sources */,
+				DDD7A83E28646E05008BE80F /* EMMessageBubbleView.m in Sources */,
 				DD2E48F62861DB5300D16060 /* RCTAgoraRteChatViewManager.m in Sources */,
-				DD2E49512861EB4500D16060 /* EMMessageModel.m in Sources */,
+				DDD7A84028646E05008BE80F /* EMMessageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

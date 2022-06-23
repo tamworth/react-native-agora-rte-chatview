@@ -5,41 +5,75 @@
 */
 
 // Chat
-ChatMuteTagText = "You are not allowed to send messages in the chat box";
-ChatText = "Message";
-ChatEmptyText = "No Message";
-ChatConversation = "Quiz";
-ChatSendText = "Send";
-ChatPlaceholderText = "Input";
-ChatSilencedPlaceholderText = "Banned to chat";
-ChatDisableToastText = "Turn on mute mode";
-ChatEnableToastText = "Turn off mute mode";
-ChatDisableText = "mute chat";
-
-rtm_role_student = "Student";
-rtm_role_teacher = "Teacher";
-rtm_title_chat = "Chat";
-rtm_no_message = "No Message";
+fcr_rtm_im_mute_tag_text = "You are not allowed to send messages in the chat box";
+fcr_rtm_im_message = "Message";
+fcr_rtm_im_no_message = "No Message";
+fcr_rtm_im_quiz = "Quiz";
+fcr_rtm_im_send = "Send";
+fcr_rtm_im_input_placeholder = "Input";
+fcr_rtm_im_silence_holder = "Banned to chat";
+fcr_rtm_im_mute_mode = "Turn on mute mode";
+fcr_rtm_im_unmute_mode = "Turn off mute mode";
+fcr_rtm_im_silenced_placeholder = "Banned to chat";
+fcr_rtm_im_mute_chat = "mute chat";
+fcr_rtm_im_student = "Student";
+fcr_rtm_im_teacher = "Teacher";
+fcr_rtm_im_title = "Chat";
 
 // Hyphenate
-ChatText = "Chat";
-ChatAnnouncement = "Notice";
-ChatTeacher= "Teacher";
-ChatAssistant= "Assistant";
-ChatEmptyText = "No Message";
-ChatNoAnnouncement = "No Notice";
-ChatAllMute = "All Mute";
-ChatMute = "You are muted by teacher";
-ChatLoginFaild = "Login failed";
-ChatJoinFaild = "Join failed";
-ChatSendFaildByMute = "Send faild,you have been muted";
-ChatSendFaildBySensitive = "Send faild,message contain sensitive word";
-ChatLoginOnOtherDevice = "Account login on ther device";
-ChatLogoutForced = "Account login out forced";
-ChatTeacherRemoveMsg = "The teacher remove a message";
-ChatTeacherMuteAll = "The teacher mute all";
-ChatTeacherUnmuteAll = "The teacher unmute all";
-ChatRecall = "Recall";
-ChatRecallAMessage = "Recall a message";
-ChatMutedByTeacher = "muted by %@ teacher";
-ChatUnmutedByTeacher = "unmuted by %@ teacher";
+fcr_hyphenate_im_send = "Send";
+fcr_hyphenate_im_chat = "Chat";
+fcr_hyphenate_im_announcement = "Notice";
+fcr_hyphenate_im_input_placeholder = "Input";
+fcr_hyphenate_im_teacher= "Teacher";
+fcr_hyphenate_im_assistant= "Assistant";
+fcr_hyphenate_im_no_message = "No Message";
+fcr_hyphenate_im_no_announcement = "No Notice";
+fcr_hyphenate_im_all_mute = "All Mute";
+fcr_hyphenate_im_mute = "You are muted by teacher";
+fcr_hyphenate_im_login_faild = "Login failed";
+fcr_hyphenate_im_join_faild = "Join failed";
+fcr_hyphenate_im_send_faild_by_mute = "Send faild,you have been muted";
+fcr_hyphenate_im_send_faild_by_sensitive = "Send faild,message contain sensitive word";
+fcr_hyphenate_im_login_on_other_device = "Account login on ther device";
+fcr_hyphenate_im_logout_forced = "Account login out forced";
+fcr_hyphenate_im_teacher_remove_message = "The teacher remove a message";
+fcr_hyphenate_im_teacher_mute_all = "The teacher mute all";
+fcr_hyphenate_im_teacher_unmute_all = "The teacher unmute all";
+fcr_hyphenate_im_recall = "Recall";
+fcr_hyphenate_im_recall_a_message = "Recall a message";
+fcr_hyphenate_im_muted_by_teacher = "muted by {xxx} teacher";
+fcr_hyphenate_im_unmuted_by_teacher = "unmuted by {xxx} teacher";
+fcr_hyphenate_im_photo_permission_disabled = "Album permission not enabled";
+fcr_hyphenate_im_photo_permission_request = "Please turn on all photos access in system settings";
+fcr_hyphenate_im_image_too_large = "The picture is too large, please choose another";
+
+// Cloud
+fcr_cloud_file_name = "File Name";
+fcr_cloud_search = "Search";
+fcr_cloud_public_resource = "Public coursewares";
+fcr_cloud_private_resource = "Private coursewares";
+fcr_cloud_total_item = "items";
+
+// AnswerSelector
+fcr_popup_quiz = "Selector";
+fcr_popup_quiz_post = "Post";
+fcr_popup_quiz_change = "Change My Answer";
+fcr_popup_quiz_submission = "Submission List";
+fcr_popup_quiz_accuracy = "Accuracy";
+fcr_popup_quiz_correct = "The Correct Answer";
+fcr_popup_quiz_my_answer = "My Answer";
+fcr_popup_quiz_start_again = "restart";
+fcr_popup_quiz_answer_time = "Selector";
+
+// poll
+fcr_poll_title = "Poll";
+fcr_poll_submit = "Submit";
+fcr_poll_multi = "Multi-select";
+fcr_poll_single = "Single";
+fcr_poll_start = "Start";
+fcr_poll_input_placeholder = "Please input content";
+fcr_poll_input_option = "Please input option";
+
+// countdown
+fcr_countdown_timer_title = "Countdown";

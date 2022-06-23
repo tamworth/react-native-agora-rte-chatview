@@ -24,5 +24,7 @@ typedef NS_ENUM(NSUInteger, ChatRoomState) {
     ChatRoomStateJoinFail,
 };
 
+static NSString *Ag_localized_replacing = @"{xxx}";
+
 
 #endif /* ChatWidgetDefine_h */

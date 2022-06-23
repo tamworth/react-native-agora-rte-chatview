@@ -8,7 +8,6 @@
 
 #import "EMMessageStringCell.h"
 #import <Masonry/Masonry.h>
-//#import <AgoraWidgets/AgoraWidgets-Swift.h>
 #import "AGResourceManager.h"
 
 @interface EMMessageStringCell ()

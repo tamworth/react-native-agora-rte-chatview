@@ -45,6 +45,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)logout;
 // 发送普通聊天消息
 - (void)sendCommonTextMsg:(NSString*)aText;
+// 发送图片消息
+- (void)sendImageMsgWithData:(NSData*)aImageData msgType:(ChatMsgType)aType asker:(NSString*)aAsker;
 // 获取用户配置
 - (ChatUserConfig*)userConfig;
 // 接收的消息
@@ -53,6 +55,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateAvatar:(NSString*)avatarUrl;
 // 更新昵称
 - (void)updateNickName:(NSString*)nickName;
+// 全员禁言
+- (void)muteAllMembers:(BOOL)muteAll;
 @property (nonatomic) BOOL isAllMuted;
 @property (nonatomic) BOOL isMuted;
 @property (nonatomic,strong) ChatUserConfig* user;
