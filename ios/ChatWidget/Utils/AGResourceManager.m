@@ -34,6 +34,8 @@
 @implementation NSString (Agora)
 
 - (NSString*)ag_localized {
-    return NSLocalizedStringFromTableInBundle(self, nil, [AGResourceManager ChatBundle], @"");
+    NSString* bundlePath = [[AGResourceManager ChatBundle] pathForResource:@"zh-Hans"ofType:@"lproj"];
+    return [[NSBundle bundleWithPath:bundlePath] localizedStringForKey:self value:@""table:nil];
+//    return NSLocalizedStringFromTableInBundle(self, nil, [AGResourceManager ChatBundle], @"");
 }
 @end
