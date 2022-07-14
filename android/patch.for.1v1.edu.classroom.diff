@@ -1,0 +1,124 @@
+build module as a standalone aar
+
+### 1.
+#gradle.properties under project root folder
+EDU_UI_KIT_VERSION_NAME=0.0.6-let
+EDU_UI_KIT_GROUP=io.agora.agoraeduuikit
+
+EDU_UI_KIT_POM_NAME=UI Kit for edu from Agora
+EDU_UI_KIT_POM_ARTIFACT_ID=edu-ui-kit
+EDU_UI_KIT_POM_PACKAGING=aar
+
+#build.gradle under module folder
+id 'maven-publish'
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // Add additional sourcesJar to artifacts
+                artifact(androidSourcesJar)
+
+                // You can then customize attributes of the publication as shown below.
+                artifactId = EDU_UI_KIT_POM_ARTIFACT_ID
+                groupId = EDU_UI_KIT_GROUP
+                version = EDU_UI_KIT_VERSION_NAME
+
+                pom {
+                    name = EDU_UI_KIT_POM_NAME
+                    description = "A framework for building edu ui kit"
+                    url = "https://github.com/AgoraIO/rte-platform-plugins"
+
+                    developers {
+                        developer {
+                            id = "agora"
+                            name = "Agora"
+                        }
+                    }
+
+                    licenses {
+                        license {
+                            name = "MIT License"
+                            url = "https://github.com/AgoraIO/rte-platform-plugins/blob/HEAD/LICENSE"
+                            distribution = "repo"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+./gradlew AgoraEduUIKit:build publishToMavenLocal
+
+
+
+
+
+### 2.
+
+MOB_EASE_HYPHENATE_VERSION_NAME=0.0.3-kel
+MOB_EASE_HYPHENATE_GROUP=com.hyphenate.easeim
+
+MOB_EASE_HYPHENATE_POM_NAME=UI Kit for edu from Agora
+MOB_EASE_HYPHENATE_POM_ARTIFACT_ID=im
+MOB_EASE_HYPHENATE_POM_PACKAGING=aar
+
+// Creating sources with comments
+task androidSourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+#build.gradle under module folder
+id 'maven-publish'
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // Add additional sourcesJar to artifacts
+                artifact(androidSourcesJar)
+
+                // You can then customize attributes of the publication as shown below.
+                artifactId = MOB_EASE_HYPHENATE_POM_ARTIFACT_ID
+                groupId = MOB_EASE_HYPHENATE_GROUP
+                version = MOB_EASE_HYPHENATE_VERSION_NAME
+
+                pom {
+                    name = MOB_EASE_HYPHENATE_POM_NAME
+                    description = "A framework for building edu ui kit"
+                    url = "https://github.com/AgoraIO/rte-platform-plugins"
+
+                    developers {
+                        developer {
+                            id = "agora"
+                            name = "Agora"
+                        }
+                    }
+
+                    licenses {
+                        license {
+                            name = "MIT License"
+                            url = "https://github.com/AgoraIO/rte-platform-plugins/blob/HEAD/LICENSE"
+                            distribution = "repo"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+./gradlew hyphenate:build publishToMavenLocal
+

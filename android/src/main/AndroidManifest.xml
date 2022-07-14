@@ -1,6 +1,3 @@
-
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.agorarte.chat">
-
-</manifest>
-  
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="io.agora.rte.extensions.widget.im" />

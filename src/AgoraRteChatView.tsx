@@ -1,16 +1,18 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import {requireNativeComponent, Platform, View} from 'react-native';
+import PropTypes from "prop-types";
+import React from "react";
+import {
+  requireNativeComponent,
+  Platform,
+  View,
+  UIManager,
+} from "react-native";
 
 class AgoraRteChatView extends React.Component {
-  static propTypes: {
-    whiteBoardId: PropTypes.Requireable<string>;
-    roomUuid: PropTypes.Requireable<any>;
-  };
+  // static propTypes: {
+  //   whiteBoardId: PropTypes.Requireable<StyleProp>;
+  //   roomUuid: PropTypes.Requireable<any>;
+  // };
   render(): JSX.Element {
-    if (Platform.OS == 'android') {
-      return <View />;
-    }
     return <RCTAgoraChatView {...this.props} />;
   }
 }
@@ -21,5 +23,19 @@ class AgoraRteChatView extends React.Component {
 //   roomToken: PropTypes.string,
 // };
 
-const RCTAgoraChatView = requireNativeComponent('RCTRteChatView');
+const LINKING_ERROR =
+  "The package 'react-native-agora-rte-chatview' doesn't seem to be linked. Make sure: \n\n" +
+  Platform.select({ ios: "- You have run 'pod install'\n", default: "" }) +
+  "- You rebuilt the app after installing the package\n" +
+  "- You are not using Expo managed workflow\n";
+
+const ComponentName = "RCTRteChatView";
+
+export const RCTAgoraChatView =
+  UIManager.getViewManagerConfig(ComponentName) != null
+    ? requireNativeComponent(ComponentName)
+    : () => {
+        throw new Error(LINKING_ERROR);
+      };
+
 export default AgoraRteChatView;
