@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNAgoraRteChatview"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "RNAgoraRteChatview"
   s.description  = <<-DESC
                   RNAgoraRteChatview
